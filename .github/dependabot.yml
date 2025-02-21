@@ -1,9 +1,10 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/backend"  # Root of the repository
+    directory: "/backend"  # For the "backend" subdirectory
     schedule:
       interval: "daily"
+    versioning-strategy: "increase"
   - package-ecosystem: "npm"
     directory: "/frontend"  # For the "frontend" subdirectory
     schedule:
